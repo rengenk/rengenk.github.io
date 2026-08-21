@@ -1,4 +1,4 @@
-# Rodion Katsiev — DevOps Portfolio
+# rengenk — DevOps Portfolio
 
 Personal responsive portfolio website for a DevOps engineer.
 
