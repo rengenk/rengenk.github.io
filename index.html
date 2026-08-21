@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="rengenk — DevOps Engineer">
+  <title>rengenk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home"><img src="assets/logo.png" alt="rengenk"></a>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" aria-label="Menu">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">$ whoami</p>
+        <h1><span>rengenk</span></h1>
+        <h2>DevOps Engineer<span class="cursor">_</span></h2>
+        <p class="lead">I build reliable infrastructure, automate delivery pipelines and turn complex deployments into repeatable processes.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div class="terminal reveal">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>~/portfolio</span></div>
+        <pre><code><span class="green">rengenk@linux</span>:<span class="violet">~</span>$ kubectl get pods
+NAME                     READY   STATUS
+api-7f8c9d7f6c           1/1     Running
+worker-65ddc8c76         1/1     Running
+postgres-0               1/1     Running
+
+<span class="green">rengenk@linux</span>:<span class="violet">~</span>$ docker ps
+CONTAINER       STATUS
+nginx           Up 14 days
+prometheus      Up 14 days
+grafana         Up 14 days
+
+<span class="green">rengenk@linux</span>:<span class="violet">~</span>$ terraform apply
+<span class="green">Apply complete!</span></code></pre>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal"><p class="eyebrow">01 / ABOUT</p><h2>Infrastructure should be <span>boring.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a DevOps engineer focused on Linux infrastructure, containers, CI/CD and observability.</p>
+          <p>I enjoy automating repetitive operations, improving deployment reliability and building systems that are easy to understand and maintain.</p>
+          <div class="facts"><div><strong>Linux</strong><small>Daily driver</small></div><div><strong>IaC</strong><small>Automation first</small></div><div><strong>CI/CD</strong><small>Ship safely</small></div></div>
+        </div>
+        <div class="code-card reveal"><span class="comment"># principles</span><br>automation = true<br>monitoring = "always"<br>deployment = "repeatable"<br>downtime = <span class="red">0</span></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal"><p class="eyebrow">02 / SKILLS</p><h2>My <span>toolbox.</span></h2></div>
+      <div class="skills-grid">
+        <div class="skill reveal"><i class="devicon-linux-plain"></i><div><b>Linux</b><small>Administration · Shell · Networking</small></div></div>
+        <div class="skill reveal"><i class="devicon-docker-plain"></i><div><b>Docker</b><small>Images · Compose · Registry</small></div></div>
+        <div class="skill reveal"><i class="devicon-kubernetes-plain"></i><div><b>Kubernetes</b><small>Deployments · Services · Scaling</small></div></div>
+        <div class="skill reveal"><i class="devicon-jenkins-plain"></i><div><b>Jenkins</b><small>Pipelines · Automation</small></div></div>
+        <div class="skill reveal"><i class="devicon-prometheus-original"></i><div><b>Prometheus</b><small>Metrics · Alerting</small></div></div>
+        <div class="skill reveal"><i class="devicon-grafana-plain"></i><div><b>Grafana</b><small>Dashboards · Observability</small></div></div>
+        <div class="skill reveal"><i class="devicon-python-plain"></i><div><b>Python</b><small>Automation · Bots · Scripts</small></div></div>
+        <div class="skill reveal"><i class="devicon-bash-plain"></i><div><b>Bash</b><small>System automation</small></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal"><p class="eyebrow">03 / PROJECTS</p><h2>Things I've <span>built.</span></h2></div>
+      <div class="projects">
+        <article class="project reveal"><div class="project-no">01</div><h3>DevOps Quiz Bot</h3><p>Telegram bot that generates and schedules daily DevOps quizzes.</p><div class="tags"><span>Python</span><span>Telegram API</span><span>SQLite</span><span>Docker</span></div><a href="https://github.com/" target="_blank">GitHub ↗</a></article>
+        <article class="project reveal"><div class="project-no">02</div><h3>Monitoring Stack</h3><p>Infrastructure monitoring with metrics, dashboards and alerting.</p><div class="tags"><span>Prometheus</span><span>Grafana</span><span>Node Exporter</span><span>Docker</span></div><a href="https://github.com/" target="_blank">GitHub ↗</a></article>
+        <article class="project reveal"><div class="project-no">03</div><h3>CI/CD Infrastructure</h3><p>Automated build, test and deployment workflows for containerized services.</p><div class="tags"><span>Jenkins</span><span>Git</span><span>Docker</span><span>Kubernetes</span></div><a href="https://github.com/" target="_blank">GitHub ↗</a></article>
+        <article class="project reveal"><div class="project-no">04</div><h3>Infrastructure as Code</h3><p>Reproducible server configuration and infrastructure provisioning.</p><div class="tags"><span>Terraform</span><span>Ansible</span><span>Linux</span></div><a href="https://github.com/" target="_blank">GitHub ↗</a></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal"><p class="eyebrow">04 / EXPERIENCE</p><h2>Learning by <span>building.</span></h2></div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><span>2026 — Present</span><div><h3>DevOps Engineering</h3><p>Hands-on infrastructure, Linux, Docker, Kubernetes, monitoring and CI/CD projects</p></div></div>
+        <div class="timeline-item reveal"><span>2026 — Present</span><div><h3>School 21 · Sber</h3><p>Project-based software engineering training with a strong systems and automation focus</p></div></div>
+        <div class="timeline-item reveal"><span>2020 — 2022</span><div><h3>Kuban State Agrarian University (Krasnodar)</h3><p>Applied computer science</p></div></div>
+        <div class="timeline-item reveal"><span>2016 — 2020</span><div><h3>North-Caucasus Federal University (Stavropol)</h3><p>Information system and technology</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-box reveal">
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2>Let's build something <span>reliable.</span></h2>
+        <p>Have an infrastructure challenge, project or opportunity? Drop me a message.</p>
+        <div class="actions"><a class="btn primary" href="mailto:info@rengenk.com">Email</a><a class="btn" href="https://github.com/rengenk" target="_blank">GitHub</a><a class="btn" href="https://t.me/rengenk" target="_blank">Telegram</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 1998 - 2026</span><span>Built with HTML · CSS · JS</span></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
